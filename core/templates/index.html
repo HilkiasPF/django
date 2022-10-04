@@ -6,8 +6,13 @@
 </head>
 <body>
 {% for c in contato %}
-Nome({{c.id}}) = {{ c.nome }}<br>
-Sexo = {{ c.sexo }}<br>
+ID = {{ c.id }}<br>
+Nome = {{ c.nome }}<br>
+    {% if c.sexo == 'M' %}
+        Sexo = Masculino<br>
+    {% else %}
+        Sexo = Feminino<br>
+    {% endif %}
 Idade = {{ c.idade }}<br>
 <br>
 <hr>
