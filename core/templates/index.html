@@ -6,7 +6,11 @@
 </head>
 <body>
 {% for c in contato %}
-Nomes: {{ c.nome }}
+Nome({{c.id}}) = {{ c.nome }}<br>
+Sexo = {{ c.sexo }}<br>
+Idade = {{ c.idade }}<br>
+<br>
+<hr>
 {% endfor %}
 </body>
 </html>
