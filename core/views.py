@@ -1,5 +1,6 @@
 from django.shortcuts import render
+from .models import ContatoModel
 
 def index(request):
-    context = {'opa': 'ta'}
+    context = {'contato': ContatoModel.objects.all()}
     return render(request, 'index.html', context)
