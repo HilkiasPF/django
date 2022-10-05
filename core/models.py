@@ -8,6 +8,8 @@ class ContatoModel(models.Model):
           ('F', 'Feminino')
           )
     sexo = models.CharField(max_length=2, choices=op)
+    foto = models.ImageField(upload_to='core/static/fotos', default=None)
+
 
     class Meta:
         verbose_name = 'Contato'
